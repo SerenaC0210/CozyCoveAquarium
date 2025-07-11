@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- head
+
+        Purpose:
+        - Title used here shows up in the browser tab
+        - Link to the favicon (small image that appears in the browser tab)
+        - Link to the CSS file (used to style the webpage)
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) (favicon)
+        - [ ] Any time after
+        -->
+        <title>Cozy Cove Aquarium</title>
+        <link rel="icon" href="/img/starfish-icon.png">
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    
+    <body>
+        <!-- navbar
+
+        Purpose:
+        - Navigation bar that allows users to jump to different sections of the webpage
+        - Also holds buttons for user settings (dark mode, reduce motion)
+
+        When To Modify:
+        - [ ] Project 4 (REQUIRED FEATURE)
+        - [ ] Project 5 (REQUIRED FEATURE) 
+        - [ ] Project 8 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        -->
+        <div class="navbar">
+            <ul>
+            <li><a href="#schedule-head">Schedule</a></li>
+            <li><a href="animals.html" target="_blank">Animals</a></li>
+            <li><a href="locations.html" target="_blank">Locations</a></li>
+            <li><a href="#links-head">Links</a></li>
+            <li><button id="theme-button">Toggle Dark Mode</button></li>
+            </ul>
+        </div>
+
+
+        <!-- headings
+
+        Purpose:
+        - Main header section of the webpage
+        - Contains the title, subtitle, image, and key buttons for the webpage
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 3 (REQUIRED FEATURE) 
+        - [ ] Project 4 (REQUIRED FEATURE) 
+        - [ ] Any time after
+        -->
+        <div class="header-container">
+            <img class="header-img" src="./img/orca.png"/>
+            <h1>Cozy Cove Aquarium</h1>
+            <h3>A Sea of Discovery in Every Visit</h3>
+            <div class="header-button-container">
+                <button class="header-button" type="button">Reserve Tickets</button>
+                <button class="header-button" type="button">See What Times We Have</button>
+            </div>
+        </div>
+
+        
+        <!-- about
+
+        Purpose:
+        - Section for general info about the event
+        - Contains a video, description, and key points about the event
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <h2>About the Event</h2>
+        <p>Cozy Cove Aquarium is opening soon, and you're invited! Our brand-new aquarium offers an up-close look into the lives of fascinating marine animals. This event will feature tours for our exhibits, and fun activities for guests of all ages.</p>
+
+        <h4>Tag Line</h4>
+        <ul>
+            <li> <b>Bullet 1:</b> <i>Description</i></li>
+            <li> <b>Bullet 2:</b> <i>Description</i></li>
+            <li> <b>Bullet 3:</b> <i>Description</i></li>
+        </ul>
+
+        <!-- schedule
+
+        Purpose:
+        - Section for specific info about the event's schedule
+        - Contains images and descriptions of each activity
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <h2 id="schedule-head">Event Schedule</h2>
+        <!-- add a link that opens another tab to look at a compressed version of the timeline -->
+        <img alt="An image of a tour group being led by a guide" class="event-images" src="img/tour-guide.png"/>
+        <h3>Event Activity 1 - Meet Up 11:30AM</h3>
+        <p>Our guests will be welcomed by the tour guides at the main entrance at the front of the building. Here they will receive name tags, brochures, and a rundown of the day's activities. This is a great time to get to know your fellow visitors before the tour officially begins!</p>
+            
+        <img alt="An image of the inside of an aquarium" class="event-images" src="img/aquarium-walkthrough.png"/>
+        <h3>Event Activity 2 - Aquarium Walkthrough 11:30AM</h3>
+        <p>This portion of the tour takes you through the layout of the aquarium. You will by guided through each section, learning the themes and special features of different areas like our coral reef habitats and interactive touch tanks. We hope this will help you get an overview of where our exhibits are.</p>
+
+        <img alt="A tank with clownfish" class="event-images" src="img/exhibits.jpg"/>
+        <h3>Event Activity 3 - Exhibits 12:30PM</h3>
+        <p>Here's where the real magic happens! Guests will spend time at the exhibits, watching a variety of learning life in action. Informational talks by staff and short feeding sessions will also be included during this time!</p>
+
+        <img alt="A cartoon of a lady eating lunch" class="event-images" src="img/lunch.png"/>
+        <h3>Event Activity 4 - Lunch 2:00PM</h3>
+        <p>We will be providing meals in our aquarium's cafe. Our options include favorites such as fish-shaped grilled cheese sandwiches, chicken tenders, pizzas, salad wraps, and more!</p>
+
+        <img alt="A cartoon of a man floating with light bulb " class="event-images" src="img/activities.png"/>
+        <h3>Event Activity 5 - Activities 3:30PM</h3>
+        <p>To end off the day, we will be hosting hands-on activities to turn learning into action! These sessions are filled with educational games, crafts, and conservation-themed activities. Kids and adults alike will be able to make ocean-theme crafts, and learn how to protect marine life and reduce ocean pollution.</p>
+        <!-- rsvp [PLACEHOLDER] [ADDED IN UNIT 6] -->
+        <!-- success modal [PLACEHOLDER] [ADDED IN UNIT 9] --> 
+
+        <!-- links
+
+        Purpose:
+        - Links to other resources related to the event
+
+        When To Modify:
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <h2 id="links-head">Links</h2>
+
+        <!-- This <a> block is one link.  Copy and paste all 6 lines to create another link. -->
+        <article>
+            <h3 class="block">
+                <a href="https://theoceancleanup.com/" target="_blank">The Ocean Cleanup</a>
+            </h3>
+            <p class="block">A nonprofit environmental organization that was founded in 2013 by Dutch inventor Boyan Slat. This website shows their mission to develop and deploy innovative cleanup technology.</p>
+
+            <h3 class="block">
+                <a href="https://www.nature.org/en-us/what-we-do/our-priorities/protect-water-and-land/land-and-water-stories/protecting-our-ocean/" target="_blank">The Nature Conservancy</a>
+            </h3>
+            <p class="block">The Nature Conservancy’s page highlights their efforts to protect oceans and marine life through science-based conservation. It shares stories and strategies focused on preserving healthy waters and coastal ecosystems worldwide.</p>
+        </article>
+
+        <div class="footer">
+            <p>Have More Questions?</p>
+            <a style="font-style: normal;" href="contactus.html" target="_blank">Contact Us!</a>
+            <p><a style ="font-style: normal;" href="rules.html" target="_blank">Visitor Rules</a></p>
+        </div>
+        <script src="index.js" defer></script>
+    </body>
+</html>
