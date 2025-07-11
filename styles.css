@@ -1,0 +1,278 @@
+/* To do: fix links section in dark mode 
+   Stretch feature week 6 
+*/
+
+html {
+  background-color: white;
+  scroll-padding-top: 50px; 
+}
+
+body {
+  font-size: 16px;
+  color: black;
+  font-family: Tahoma, sans-serif; 
+  margin: 0px;
+}
+
+h1 {
+  font-size: 50px;
+  color: #fcfcfc;
+  text-align: center;
+}
+
+h2 {
+  color: rgb(92, 92, 201);
+  text-align: center;
+}
+
+h3 {
+  color: rgb(199, 138, 208);
+  text-align: center;
+}
+
+h4 {
+  color: rgb(74, 176, 58);
+}
+
+p {
+  text-align: left;
+  margin: 10px 0;
+}
+
+article p {
+  text-decoration: none;
+  color: black;
+}
+
+.block { 
+  text-align: left;
+}
+
+article h3 a:link {
+  text-decoration: none;
+}
+
+article h3 a:visited {
+  color: blue;
+  text-decoration: none;
+  font-style: italic;
+}
+
+article h3 a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+article h3 a:active {
+  color: green;
+}
+
+.header-container {
+  background-color: #42b6dd;
+  background-image: url(/img/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-item:nth-of-type(1) { 
+  width: 50%;
+}
+
+.header-item:nth-of-type(2) {
+  width: 50%;
+}
+
+.header-img { 
+  height: 100px;
+  width: auto;
+  margin: 10px auto;
+  max-width: 200px;
+  display: block;
+  padding-top: 50px;
+}
+
+.header-button {
+  background-color: #DED3C4;   
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 16px;             
+  border: none;              
+  padding: 5px 12px;
+  margin: 3px;          
+  border-radius: 6px;        
+  cursor: pointer;
+  transition: transform 0.2s ease; 
+}
+
+.header-button-container { 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px; 
+}
+
+.footer { 
+  background-color: #DED3C4;
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 13px;
+  font-style: italic;
+}
+
+.navbar ul {
+  position: fixed;
+  top: 0;
+  background-color: #2b3785;
+  z-index: 1000; 
+  list-style-type: none;
+  overflow: hidden;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  padding: 5px 0;
+}
+
+.navbar ul li {
+  float: left;
+  margin: 5px;
+} 
+
+.navbar ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  text-align: left;
+  padding: 5px;
+  transition: transform 0.2s ease; 
+
+}
+
+.navbar ul li a:hover {
+  font-weight: bold;
+  color: blue;
+  transform: scale(1.05);
+
+}
+
+/* My elements that are not listed in starter code */
+.event-images { 
+  display: block;
+  height: 300px;
+  width: auto;
+  object-fit: cover;
+  object-position: center;
+  margin: auto;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/*** About Section ***
+  
+  Purpose:
+  - Add style rules for your website's About section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+
+/*** Schedule Section ***
+  
+  Purpose:
+  - Add style rules for your website's Schedule section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+
+/*** Links Section ***
+  
+  Purpose:
+  - Add style rules for your website's Links section
+
+  When To Modify:
+  - [ ] Project 3 (OPTIONAL)
+  - [ ] Project 4 (STRETCH FEATURE) 
+  - [ ] Any time after
+***/
+
+
+/*** RSVP [PLACEHOLDER] [ADDED IN UNIT 6] ***/
+/*** Animations [PLACEHOLDER] [ADDED IN UNIT 8] ***/
+/*** Success Modal [PLACEHOLDER] [ADDED IN UNIT 9] ***/
+
+.dark-mode .block {
+  color: white;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+/* Example: Different dark mode style for visited links */
+.dark-mode a:visited * {
+
+}
+
+/* Add style to button */
+#theme-button {
+
+}
+
+.dark-mode article h3 {
+  color: aqua;
+}
+
+
+/*** Custom Colors (OPTIONAL) ***
+  
+  Purpose:
+  - Use CSS variables to define custom colors for your website
+  - To get you started, we've provided the color scheme used in our example site.
+  - To reference a color variable in your css, use var(--variable-name) in place of a color value
+
+  When To Modify:
+  - [ ] Any time (OPTIONAL)
+***/
+
+:root {
+    /* Light Mode */
+    --bg-color: white;
+    /* --text-color: #42193e; */
+
+    /* Dark Mode */
+    --bg-color-dark-mode: #3e3377;
+    --text-color-dark-mode: #fff;
+
+    /* Accent Colors */
+    --accent-color-light: #d2cff5;
+    --accent-color-medium: #684fb5;
+    --accent-color-dark: #482f95;
+    --accent-color-darkest: #231942;
+    --accent-color-green: #28eb76;
+
+    /* Error Colors */
+    --error-color: #f8bbd0;
+    --error-color-border: #e63946;
+}
