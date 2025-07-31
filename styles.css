@@ -15,9 +15,14 @@ body {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 75px;
   color: #fcfcfc;
   text-align: center;
+  font-family: 'Just Another Hand', cursive;
+  text-shadow: -.030em .030em #2d3775, -.08em .08em #020F60;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
 }
 
 h2 {
@@ -181,43 +186,65 @@ button:hover {
   transform: scale(1.1);
 }
 
-/*** About Section ***
-  
-  Purpose:
-  - Add style rules for your website's About section
+#schedule-flex { 
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
 
-  When To Modify:
-  - [ ] Project 3 (OPTIONAL)
-  - [ ] Project 4 (STRETCH FEATURE) 
-  - [ ] Any time after
-***/
+.events { 
+  text-align: center;
+}
+
+/*RSVP*/
+
+.rsvp-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 50px;
+  flex-wrap: wrap; 
+  max-width: 600px;
+  margin: auto;  
+}
+
+#rsvpInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.rsvp-para { 
+  width: 50%;
+  padding-right: 10px;
+}
+
+.rsvp-participants {
+  width: 50%;
+  padding-left: 10px;
+}
+
+#rsvp-button {
+  display: block;
+  margin: 0 auto;
+}
+
+#rsvp-form { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.error{
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background: lightpink;
+}
 
 
-/*** Schedule Section ***
-  
-  Purpose:
-  - Add style rules for your website's Schedule section
-
-  When To Modify:
-  - [ ] Project 3 (OPTIONAL)
-  - [ ] Project 4 (STRETCH FEATURE) 
-  - [ ] Any time after
-***/
-
-
-/*** Links Section ***
-  
-  Purpose:
-  - Add style rules for your website's Links section
-
-  When To Modify:
-  - [ ] Project 3 (OPTIONAL)
-  - [ ] Project 4 (STRETCH FEATURE) 
-  - [ ] Any time after
-***/
-
-
-/*** RSVP [PLACEHOLDER] [ADDED IN UNIT 6] ***/
 /*** Animations [PLACEHOLDER] [ADDED IN UNIT 8] ***/
 /*** Success Modal [PLACEHOLDER] [ADDED IN UNIT 9] ***/
 
@@ -226,7 +253,7 @@ button:hover {
 }
 
 .dark-mode {
-  background-color: black;
+  background-color: rgb(25, 38, 54);
   color: white;
 }
 
@@ -235,26 +262,17 @@ button:hover {
 
 }
 
-/* Add style to button */
 #theme-button {
-
+  background-color: rgb(85, 58, 150);
+  color: white;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  padding: 5px;
+  border-radius: 8px;        
 }
 
 .dark-mode article h3 {
   color: aqua;
 }
-
-
-/*** Custom Colors (OPTIONAL) ***
-  
-  Purpose:
-  - Use CSS variables to define custom colors for your website
-  - To get you started, we've provided the color scheme used in our example site.
-  - To reference a color variable in your css, use var(--variable-name) in place of a color value
-
-  When To Modify:
-  - [ ] Any time (OPTIONAL)
-***/
 
 :root {
     /* Light Mode */
